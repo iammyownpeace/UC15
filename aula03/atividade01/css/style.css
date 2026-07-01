@@ -1,0 +1,18 @@
+/* --- CONFIGURAÇÃO PADRÃO (MODO ESCURO) --- */h1 {
+    color: #ffffff;
+}
+p{
+ background-color: #000000;
+    color: #3f2a8a;
+    font-size: 30px;
+}
+body{
+    background-color: #000000;
+    color: #45318d;
+    font-size: 30px;
+}
+img{
+    width: 300px;
+    height: 400px;
+    border: 2px solid #fff9f9;
+}
