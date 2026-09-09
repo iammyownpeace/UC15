@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+.logo{
+    width: 150px;
+}
+
+#pagina-home{
+    height: 613px;
+    background: linear-gradient(rgba(83, 75, 75, 0.281),rgba(36, 22, 22, 0.336)), url(../img/Banner.png);
+    background-size:cover;
+}  
+
+.menu-principal ul{
+    list-style: none;
+    /* usado para remover os marcadores padrões*/
+}
+.menu-principal ul li {
+    display: inline-block;
+    /*Faz com que cada item da lista se comporte como um bloco */
+}
+.menu-principal ul li a {
+    color: white;
+    text-decoration: none;
+    /*Remove p sublinhado do link */
+    text-transform: uppercase; /* Converte o texto para maiusculo */
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 1.06s ease;
+}
+.menu-principal ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.menu-principal ul li .link-ativo{
+    background: white;
+    color: black;
+}
+h1{
+    font-size: 70px;
+    color: white;
+    margin: 30px;
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 80px;
+    color:white;
+    text-decoration: none;
+    transition: 1.6s ease;
+    margin: 10px;
+}
+.btn:hover{
+    background: white;
+    color: black;
+}
+
+.conteudo-banner{
+    height: 438px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#pagina-home main{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.main { 
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+
+.titulo1{
+    font-size: 30px;
+    color: #000000;
+    margin: 20px;
+}
+
+.main h1{
+    font-size: 30px;
+    color: #000000;
+    margin: 20px;
+}
+
+.galeria{
+    border: 10px solid #05b0ff;
+    margin: 0px 0px -20px 0px;
+}
+
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.fotos figure{
+    background-color: #000000;
+    border  :4.5px solid #000000;
+}
+
+.fotos img{
+    width: 340px;
+    height: auto;
+    object-fit: cover;
+}
+
+.galeria-imagens{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.legenda{
+    text-align: center;
+    background-color: #bb7205;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.valores h1{
+    padding-top: 40px;
+    font-size: 30px;
+    color: #000000;
+    margin: 20px;
+}
+
+.valores{
+    height: 550px;
+    background-color: #eec883;
+}
+
+.tabela{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.P1 {
+    display: flex;
+    justify-content: center;
+}
+
+.P1-1 {
+    width: 500px;
+}
+
+.P1-2 {
+    width: 500px;
+}
