@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre uma nova série no AniVerse.">
+    <title>AniVerse | Cadastrar série</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="login-page">
+        <section class="hero-panel" aria-label="Apresentação AniVerse">
+            <a class="brand" href="#" aria-label="AniVerse - página inicial">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" role="img">
+                        <path d="M20 3 36 12v16L20 37 4 28V12L20 3Z" />
+                        <path d="m12 26 4.2-12h3.7l-4.2 12M28 26l-4.2-12h-3.7l4.2 12M15.2 22h9.6" />
+                    </svg>
+                </span>
+                <span>Ani<span>Verse</span></span>
+            </a>
+
+            <div class="hero-copy">
+                <p class="eyebrow">Seu universo começa aqui</p>
+                <h1>Onde cada história<br><strong>ganha vida.</strong></h1>
+                <p class="hero-description">Reúna seus animes favoritos, descubra novas aventuras e compartilhe sua paixão com uma comunidade que entende você.</p>
+            </div>
+
+            <div class="hero-art">
+                <img src="img/anime-collage.png" alt="Coleção de pôsteres de animes" class="demo-image">
+                <div class="image-caption">
+                    <span class="caption-dot" aria-hidden="true"></span>
+                    Explore novas histórias
+                </div>
+            </div>
+
+            <p class="hero-footer">Navegue. Descubra. Viva cada episódio.</p>
+        </section>
+
+        <section class="form-panel">
+            <div class="form-content">
+                <div class="mobile-brand brand">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 40 40">
+                            <path d="M20 3 36 12v16L20 37 4 28V12L20 3Z" />
+                            <path d="m12 26 4.2-12h3.7l-4.2 12M28 26l-4.2-12h-3.7l4.2 12M15.2 22h9.6" />
+                        </svg>
+                    </span>
+                    <span>Ani<span>Verse</span></span>
+                </div>
+
+                <header class="form-header">
+                    <p class="eyebrow">Biblioteca AniVerse</p>
+                    <h2>Cadastre uma série</h2>
+                    <p>Adicione uma nova história à sua coleção.</p>
+                </header>
+
+                <form id="series-form" novalidate>
+                    <div class="field-group">
+                        <label for="title">Título da série</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon" aria-hidden="true">✦</span>
+                            <input type="text" id="title" name="title" placeholder="Ex.: One Piece" required>
+                        </div>
+                        <span class="field-error" id="title-error" role="alert"></span>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="episodes">Quantidade de episódios</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon" aria-hidden="true">#</span>
+                            <input type="number" id="episodes" name="episodes" min="1" placeholder="Ex.: 24" required>
+                        </div>
+                        <span class="field-error" id="episodes-error" role="alert"></span>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="description">Descrição</label>
+                        <div class="input-wrapper textarea-wrapper">
+                            <span class="input-icon" aria-hidden="true">☰</span>
+                            <textarea id="description" name="description" rows="4" placeholder="Conte um pouco sobre a série..." required></textarea>
+                        </div>
+                        <span class="field-error" id="description-error" role="alert"></span>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="author">Autor</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon" aria-hidden="true">♙</span>
+                            <input type="text" id="author" name="author" placeholder="Ex.: Eiichiro Oda" required>
+                        </div>
+                        <span class="field-error" id="author-error" role="alert"></span>
+                    </div>
+
+                    <button class="submit-button" type="submit">
+                        <span>Cadastrar série</span>
+                        <span aria-hidden="true">→</span>
+                    </button>
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+                <p class="terms">Os dados cadastrados poderão ser editados depois na sua biblioteca.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

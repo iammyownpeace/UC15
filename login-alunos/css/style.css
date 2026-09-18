@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --stark-red: #b31320;
+    --stark-red-bright: #ed1c24;
+    --stark-gold: #e6b34d;
+    --arc-blue: #69e7ff;
+    --carbon: #080b11;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: grid;
+    min-height: 100svh;
+    place-items: center;
+    padding: 1.5rem;
+    background:
+        linear-gradient(115deg, rgba(8, 11, 17, .88) 0%, rgba(8, 11, 17, .56) 50%, rgba(179, 19, 32, .34) 100%),
+        url('../img/fundo.jpg') center / cover no-repeat fixed;
+}
+
+.caixa {
+    width: min(500px, 100%);
+    padding: clamp(2rem, 6vw, 3.5rem);
+    border: 1px solid rgba(105, 231, 255, .56);
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(8, 11, 17, .94), rgba(28, 15, 21, .86));
+    box-shadow: 0 22px 70px rgba(0, 0, 0, .56), inset 0 0 30px rgba(105, 231, 255, .06);
+    backdrop-filter: blur(9px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form br {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 1.75rem;
+    color: var(--white);
+    font-size: clamp(1.8rem, 5vw, 2.45rem);
+    line-height: 1.1;
+    text-align: center;
+    text-shadow: 0 0 22px rgba(105, 231, 255, .25);
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 100%;
+    border: 1px solid rgba(105, 231, 255, .34);
+    border-radius: 7px;
+    padding: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, .93);
+    color: var(--carbon);
+    font-size: 1rem;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+input[type='text'] {
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    border-color: var(--arc-blue);
+    box-shadow: 0 0 0 3px rgba(105, 231, 255, .22);
+}
+
+button[type='button'] {
+    width: 100%;
+    margin-top: 2rem;
+    border: 1px solid var(--stark-gold);
+    border-radius: 7px;
+    padding: 1rem;
+    background: var(--stark-red);
+    color: var(--white);
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+button[type='button']:hover {
+    background: var(--stark-red-bright);
+    box-shadow: 0 0 22px rgba(237, 28, 36, .5);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+        background-position: 58% center;
+    }
+
+    .caixa {
+        padding: 2rem 1.4rem;
+    }
+}
