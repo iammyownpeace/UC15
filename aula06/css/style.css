@@ -1,0 +1,28 @@
+.cards {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 0px;
+}
+
+.col img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container { 
+    padding: 100px 0px;
+}
+.primavera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-body{
+    text-align: center;
+}
