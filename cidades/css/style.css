@@ -1,0 +1,23 @@
+.carousel-item img{
+    height: 80vh;
+    object-fit: cover;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #4298e9;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+.card img {
+    height: 30vh;
+    margin-bottom: 50px;
+}
