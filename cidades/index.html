@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça cidades e atrações da região de Campinas.">
+  <title>Início | Climatema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Climatema</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="cidades.html">Cidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="climas.html">Climas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="carrosselCidades" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carrosselCidades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Americana"></button>
+      <button type="button" data-bs-target="#carrosselCidades" data-bs-slide-to="1" aria-label="Nova Odessa"></button>
+      <button type="button" data-bs-target="#carrosselCidades" data-bs-slide-to="2" aria-label="Santa Bárbara d'Oeste"></button>
+      <button type="button" data-bs-target="#carrosselCidades" data-bs-slide-to="3" aria-label="Hortolândia"></button>
+      <button type="button" data-bs-target="#carrosselCidades" data-bs-slide-to="4" aria-label="Campinas"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Vista_aérea_de_Americana.jpg" class="d-block w-100" alt="Vista aérea de Americana">
+        <div class="carousel-caption"><h1>Americana</h1><p>Tradição, vida urbana e espaços de lazer no interior paulista.</p></div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/ChatGPT Image 7 de out. de 2026, 09_31_18.png" class="d-block w-100" alt="Paisagem urbana de Nova Odessa">
+        <div class="carousel-caption"><h2>Nova Odessa</h2><p>Uma cidade acolhedora, com áreas verdes e ritmo tranquilo.</p></div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/12d9d94c-fb6b-42c3-b859-933971de65c8.jpg" class="d-block w-100" alt="Paisagem de Santa Bárbara d'Oeste">
+        <div class="carousel-caption"><h2>Santa Bárbara d'Oeste</h2><p>História, cultura e espaços públicos para aproveitar a cidade.</p></div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/ChatGPT Image 7 de out. de 2026, 09_38_38.png" class="d-block w-100" alt="Paisagem urbana de Hortolândia">
+        <div class="carousel-caption"><h2>Hortolândia</h2><p>Desenvolvimento e qualidade de vida em uma região conectada.</p></div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/ChatGPT Image 7 de out. de 2026, 10_13_29.png" class="d-block w-100" alt="Paisagem de Campinas">
+        <div class="carousel-caption"><h2>Campinas</h2><p>Uma metrópole dinâmica, com cultura e muitos lugares para conhecer.</p></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselCidades" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselCidades" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próxima</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="container py-5" aria-labelledby="sobre-cidades">
+      <div class="text-center mb-4">
+        <h2 id="sobre-cidades">Conheça as cidades</h2>
+        <p class="text-body-secondary mb-0">Cinco cidades da região, cada uma com seu próprio jeito de viver, passear e descobrir.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg"><article class="card h-100"><div class="card-body"><h3 class="h5 card-title">Americana</h3><p class="card-text">Uma cidade de tradição e movimento, com parques, espaços culturais e pontos conhecidos ao longo da Avenida Brasil.</p></div></article></div>
+        <div class="col-12 col-md-6 col-lg"><article class="card h-100"><div class="card-body"><h3 class="h5 card-title">Nova Odessa</h3><p class="card-text">Um município próximo, conhecido por suas áreas verdes e por espaços voltados à natureza e ao passeio ao ar livre.</p></div></article></div>
+        <div class="col-12 col-md-6 col-lg"><article class="card h-100"><div class="card-body"><h3 class="h5 card-title">Santa Bárbara d'Oeste</h3><p class="card-text">História local, atividades culturais e parques fazem parte das opções para moradores e visitantes.</p></div></article></div>
+        <div class="col-12 col-md-6 col-lg"><article class="card h-100"><div class="card-body"><h3 class="h5 card-title">Hortolândia</h3><p class="card-text">Uma cidade em constante desenvolvimento, com áreas públicas e atrações para diferentes momentos do dia.</p></div></article></div>
+        <div class="col-12 col-md-6 col-lg"><article class="card h-100"><div class="card-body"><h3 class="h5 card-title">Campinas</h3><p class="card-text">Centro regional de grande porte, com opções de lazer, cultura, parques e passeios urbanos.</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="pracas">
+      <div class="mb-4"><h2 id="pracas">Praças e espaços públicos</h2><p class="text-body-secondary">Lugares para descansar, encontrar pessoas e participar da vida da cidade.</p></div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6"><article class="card h-100"><div class="card-body"><h3 class="h5 card-title">Praça Comendador Müller · Americana</h3><p class="card-text">No Centro da cidade, a praça reúne espaços de convivência e fica próxima à Biblioteca Municipal.</p><a class="btn btn-primary" href="https://www.americana.sp.gov.br/americana-index.php?a=centro-atendimento-turista-oquefazer" target="_blank" rel="noopener noreferrer">Conhecer Americana</a></div></article></div>
+        <div class="col-12 col-md-6"><article class="card h-100"><div class="card-body"><h3 class="h5 card-title">Praça Central · Santa Bárbara d'Oeste</h3><p class="card-text">Um espaço tradicional de encontro que também recebe atividades e eventos da cidade.</p><a class="btn btn-primary" href="https://www.santabarbara.sp.gov.br/portal/noticias/0/3/71756/prefeitura-divulga-roteiro-e-programacao-do-carnaval-de-sbo-2025" target="_blank" rel="noopener noreferrer">Ver programação da cidade</a></div></article></div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="atracoes">
+      <div class="mb-4"><h2 id="atracoes">Pontos turísticos e atrações</h2><p class="text-body-secondary">Algumas ideias de passeio para descobrir a região.</p></div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4"><article class="card attraction-card h-100"><img src="img/avenida brasil.jpg" class="card-img-top" alt="Avenida Brasil em Americana"><div class="card-body d-flex flex-column"><h3 class="h5 card-title">Avenida Brasil</h3><p class="card-text">Uma das avenidas mais conhecidas de Americana, com movimento e lugares de interesse ao longo do trajeto.</p><a href="https://www.google.com/maps/@-22.7530274,-47.3461049,562a,75y,297.8h,90t/data=!3m7!1e1!3m5!1s2hNXjAFpz0Lvzc44e3gOHQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D2hNXjAFpz0Lvzc44e3gOHQ%26yaw%3D297.797!7i16384!8i8192?entry=ttu" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">Ver no mapa</a></div></article></div>
+        <div class="col-12 col-md-6 col-lg-4"><article class="card attraction-card h-100"><img src="img/jardim botanico.jpg" class="card-img-top" alt="Jardins do Jardim Botânico Plantarum"><div class="card-body d-flex flex-column"><h3 class="h5 card-title">Jardim Botânico Plantarum</h3><p class="card-text">Um passeio entre jardins, coleções de plantas e paisagens ao ar livre, em Nova Odessa.</p><a href="https://www.google.com/maps/place/Jardim+Bot%C3%A2nico+Plantarum/@-22.7809922,-47.3122838,15z" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">Ver no mapa</a></div></article></div>
+        <div class="col-12 col-md-6 col-lg-4"><article class="card attraction-card h-100"><img src="img/credito-foto-prefeitura.jpg" class="card-img-top" alt="Área verde do Parque dos Jacarandás"><div class="card-body d-flex flex-column"><h3 class="h5 card-title">Parque dos Jacarandás</h3><p class="card-text">Área ao ar livre com espaços para caminhar, descansar e aproveitar o dia.</p><a href="https://www.google.com/maps/place/Parque+dos+Jacarand%C3%A1s/@-22.7513472,-47.3689917,15z" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">Ver no mapa</a></div></article></div>
+        <div class="col-12 col-md-6 col-lg-4"><article class="card attraction-card h-100"><img src="img/12d9d94c-fb6b-42c3-b859-933971de65c8.jpg" class="card-img-top" alt="Parque dos Ipês em Santa Bárbara d'Oeste"><div class="card-body d-flex flex-column"><h3 class="h5 card-title">Parque dos Ipês</h3><p class="card-text">Parque com áreas de lazer, pista de caminhada e atrações para toda a família.</p><a href="https://www.santabarbara.sp.gov.br/portal/noticias/0/3/72298/ferias-em-santa-barbara-dinossauros-parques-literatura-e-sabores-do-campo-encantam-visitantes" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">Conhecer o parque</a></div></article></div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="galeria">
+      <div class="mb-4"><h2 id="galeria">Galeria de fotos</h2><p class="text-body-secondary">Imagens de Americana, Campinas, Nova Odessa, Santa Bárbara d'Oeste e Hortolândia.</p></div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <figure class="figure w-100 mb-0">
+            <img class="figure-img img-fluid gallery-img rounded w-100" src="img/americana-vista-aerea.jpg" alt="Vista aérea de Americana ao entardecer" loading="lazy">
+            <figcaption class="figure-caption">Americana · Foto de <a href="https://commons.wikimedia.org/wiki/User:Sintegrity">Sintegrity</a>, via <a href="https://commons.wikimedia.org/wiki/File:Americana_-_Vista_a%C3%A9rea_02.jpg">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <figure class="figure w-100 mb-0">
+            <img class="figure-img img-fluid gallery-img rounded w-100" src="img/campinas-nova.jpg" alt="Vista do centro de Campinas" loading="lazy">
+            <figcaption class="figure-caption">Campinas · Foto de <a href="https://commons.wikimedia.org/wiki/User:HVL">HVL</a>, via <a href="https://commons.wikimedia.org/wiki/File:Vista_do_Centro_de_Campinas_SP.JPG">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <figure class="figure w-100 mb-0">
+            <img class="figure-img img-fluid gallery-img rounded w-100" src="img/nova-odessa-nova.jpg" alt="Vista urbana de Nova Odessa" loading="lazy">
+            <figcaption class="figure-caption">Nova Odessa · Foto de <a href="https://commons.wikimedia.org/wiki/User:Max_Wittmann">Max Wittmann</a>, via <a href="https://commons.wikimedia.org/wiki/File:Nova_Odessa_-_Sao_Paulo_Brasil%3B_Outlook.jpg">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <figure class="figure w-100 mb-0">
+            <img class="figure-img img-fluid gallery-img rounded w-100" src="img/santa-barbara-nova.jpg" alt="Estação ferroviária de Santa Bárbara d'Oeste" loading="lazy">
+            <figcaption class="figure-caption">Santa Bárbara d'Oeste · Foto de <a href="https://commons.wikimedia.org/wiki/User:Sintegrity">Sintegrity</a>, via <a href="https://commons.wikimedia.org/wiki/File:Santa_B%C3%A1rbara_d_Oeste_-_Esta%C3%A7%C3%A3o_Ferrovi%C3%A1ria_de_Santa_B%C3%A1rbara_d%27Oeste_13.jpg">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <figure class="figure w-100 mb-0">
+            <img class="figure-img img-fluid gallery-img rounded w-100" src="img/hortolandia-nova.jpg" alt="Vista parcial de Hortolândia" loading="lazy">
+            <figcaption class="figure-caption">Hortolândia · Foto de <a href="https://commons.wikimedia.org/wiki/User:LeonardoMcunha">LeonardoMcunha</a>, via <a href="https://commons.wikimedia.org/wiki/File:Hortol%C3%A2ndia-SP.jpg">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="mapa-regiao">
+      <div class="card home-card overflow-hidden">
+        <div class="card-body text-center"><h2 class="h3 card-title" id="mapa-regiao">Explore a região</h2><p class="card-text">Veja a localização de Americana e das cidades próximas.</p></div>
+        <div class="ratio ratio-16x9"><iframe title="Mapa da região de Americana" src="https://www.openstreetmap.org/export/embed.html?bbox=-47.48%2C-22.98%2C-46.95%2C-22.62&layer=mapnik&marker=-22.7372%2C-47.3331" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="card-body text-center"><a class="btn btn-primary" href="https://www.openstreetmap.org/?mlat=-22.7372&mlon=-47.3331#map=11/-22.7372/-47.3331" target="_blank" rel="noopener noreferrer">Abrir mapa</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top py-4"><div class="container text-center text-body-secondary"><small>Climatema · Cidades e clima</small></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

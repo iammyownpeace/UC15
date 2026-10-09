@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulário demonstrativo de cadastro do Climatema.">
+  <title>Cadastro | Climatema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Climatema</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="cidades.html">Cidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="climas.html">Climas</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-9 col-lg-7">
+        <header class="text-center mb-4">
+          <h1>Cadastro</h1>
+          <p class="lead text-body-secondary">Preencha seus dados para acompanhar o Climatema.</p>
+        </header>
+        <form id="formCadastro" class="card shadow-sm">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" autocomplete="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="mb-4">
+              <label for="cidade" class="form-label">Cidade de interesse</label>
+              <select class="form-select" id="cidade" name="cidade" required>
+                <option value="" selected disabled>Escolha uma cidade</option>
+                <option>Americana</option>
+                <option>Campinas</option>
+                <option>Nova Odessa</option>
+                <option>Santa Bárbara d'Oeste</option>
+                <option>Hortolândia</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <p id="mensagemCadastro" class="small text-body-secondary mt-3 mb-0" role="status" aria-live="polite">Formulário demonstrativo: os dados não são enviados nem armazenados.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="border-top py-4"><div class="container text-center text-body-secondary"><small>Climatema · Cidades e clima</small></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById("formCadastro").addEventListener("submit", function (evento) {
+      evento.preventDefault();
+      document.getElementById("mensagemCadastro").className = "small text-success mt-3 mb-0";
+      document.getElementById("mensagemCadastro").textContent = "Cadastro demonstrativo preenchido. Os dados não foram enviados nem armazenados.";
+    });
+  </script>
+</body>
+</html>

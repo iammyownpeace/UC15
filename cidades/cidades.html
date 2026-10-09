@@ -1,164 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="css/style.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Escolha uma cidade e conheça seus espaços, atrações e paisagens.">
+  <title>Cidades | Climatema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Climatema</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Cidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Temas</a>
-        </li>   
-          <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Cadastro</a>
-        </li>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-
-  </div>
-  
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/Vista_aérea_de_Americana.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-    <h5>Americana</h5>
-     <p>tradição, desenvolvimento e qualidade de vida em um só lugar.</p>
-   </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/ChatGPT Image 7 de out. de 2026, 09_31_18.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-    <h5>Nova Odessa</h5>
-     <p>tranquilidade, natureza e crescimento lado a lado.</p>
-   </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/12d9d94c-fb6b-42c3-b859-933971de65c8.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-    <h5>Santa Bárbara d' Oeste</h5>
-     <p>uma cidade que cresce, se transforma e olha para o futuro.</p>
-   </div>
-    </div>
-      <div class="carousel-item">
-      <img src="img/ChatGPT Image 7 de out. de 2026, 09_38_38.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-    <h5>Hortolândia</h5>
-     <p>história, cultura e desenvolvimento que marcam a região.</p>
-   </div>
-    </div>
-     <div class="carousel-item">
-      <img src="img/ChatGPT Image 7 de out. de 2026, 10_13_29.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>Campinas</h5>
-     <p>uma metrópole vibrante, conectada e cheia de oportunidades.</p>
-   </div>
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<div class="container text-center">
-
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 23rem;">
-        <img src="img/avenida brasil.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Avenida Brasil</h5>
-          <p class="card-text">Descubra um dos principais pontos de Americana, perfeito para passear, conhecer a região e aproveitar momentos especiais. Um lugar que combina movimento, lazer e o charme da cidade.</p>
-          <a href="https://www.google.com/maps/@-22.7530274,-47.3461049,562a,75y,297.8h,90t/data=!3m7!1e1!3m5!1s2hNXjAFpz0Lvzc44e3gOHQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D2hNXjAFpz0Lvzc44e3gOHQ%26yaw%3D297.797!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Ver no Google Maps</a>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Climatema</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="cidades.html">Cidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="climas.html">Climas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
+  <main class="container py-5">
+    <header class="text-center mb-5">
+      <h1>Escolha uma cidade</h1>
+      <p class="lead text-body-secondary mb-0">Selecione um município para ver informações, espaços públicos e atrações.</p>
+    </header>
 
-    <div class="col">
-      <div class="card" style="width: 23rem;">
-        <img src="img/jardim botanico.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Jardim Botânico Plantarum</h5>
-          <p class="card-text">Respire fundo, desacelere e descubra um espaço repleto de plantas, jardins e paisagens incríveis. Um passeio perfeito para quem ama natureza, tranquilidade e belas fotos.</p>
-          <a href="https://www.google.com/maps/place/Jardim+Bot%C3%A2nico+Plantarum/@-22.7810405,-47.3121586,591a,75y,291.26h,90t/data=!3m7!1e1!3m5!1sFJgRMa7e-zuEeGa5kAFPTg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DFJgRMa7e-zuEeGa5kAFPTg%26yaw%3D291.26154!7i16384!8i8192!4m14!1m7!3m6!1s0x94c8984e001af117:0xffbbe7df3a80bdf6!2sJardim+Bot%C3%A2nico+Plantarum!8m2!3d-22.7809922!4d-47.3122838!16s%2Fg%2F11c5b2yqh3!3m5!1s0x94c8984e001af117:0xffbbe7df3a80bdf6!8m2!3d-22.7809922!4d-47.3122838!16s%2Fg%2F11c5b2yqh3?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Ver no Google Maps</a>
+    <section class="row g-4" aria-label="Cidades disponíveis">
+      <div class="col-12 col-lg-4">
+        <div class="list-group shadow-sm" id="listaCidades">
+          <button type="button" class="list-group-item list-group-item-action active" data-cidade="americana" aria-pressed="true">Americana</button>
+          <button type="button" class="list-group-item list-group-item-action" data-cidade="campinas" aria-pressed="false">Campinas</button>
+          <button type="button" class="list-group-item list-group-item-action" data-cidade="nova-odessa" aria-pressed="false">Nova Odessa</button>
+          <button type="button" class="list-group-item list-group-item-action" data-cidade="santa-barbara" aria-pressed="false">Santa Bárbara d'Oeste</button>
+          <button type="button" class="list-group-item list-group-item-action" data-cidade="hortolandia" aria-pressed="false">Hortolândia</button>
         </div>
       </div>
-    </div>
-
-    <div class="col">
-      <div class="card" style="width: 23rem;">
-        <img src="img/credito-foto-prefeitura.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Parque dos jacarandás</h5>
-          <p class="card-text">Um espaço para caminhar, relaxar, aproveitar o ar livre e curtir momentos inesquecíveis com quem você gosta</p>
-          <a href="https://www.google.com/maps/place/Parque+dos+Jacarand%C3%A1s/@-22.7516282,-47.3689015,582a,75y,340.31h,90t/data=!3m7!1e1!3m5!1s1numL2FRYAyuGguCxcTSug!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D1numL2FRYAyuGguCxcTSug%26yaw%3D340.30988!7i16384!8i8192!4m14!1m7!3m6!1s0x94c89bf70cb3e87f:0xbfdb9b8bd41220a6!2sParque+dos+Jacarand%C3%A1s!8m2!3d-22.7513472!4d-47.3689917!16s%2Fg%2F11g8ctrctr!3m5!1s0x94c89bf70cb3e87f:0xbfdb9b8bd41220a6!8m2!3d-22.7513472!4d-47.3689917!16s%2Fg%2F11g8ctrctr?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Ver no Google Maps</a>
-        </div>
+      <div class="col-12 col-lg-8">
+        <div id="detalhesCidade" aria-live="polite"></div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-</div>
-<section class="container py-4" aria-labelledby="mapa-torre-titulo">
-  <div class="card home-card overflow-hidden">
-    <div class="card-body text-center">
-      <h2 class="h3 card-title" id="mapa-torre-titulo">Veja o interior de São Paulo</h2>
-      <p class="card-text">Encontre os principais pontos turísticos da região e explore sua cultura e história.</p>
-    </div>
-    <div class="ratio ratio-16x9">
-      <iframe
-        title="Mapa da localização da Torre Eiffel em Paris"
-        src="https://www.google.com/maps/place/Americana+-+SP/@-22.7240416,-47.3319783,13z/data=!4m6!3m5!1s0x94c890a71cafb7ff:0x53f1339f749c58bd!8m2!3d-22.7380303!4d-47.3340223!16zL20vMDJrcmh2?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-    <div class="card-body text-center">
-      <a class="btn btn-primary" href="https://www.openstreetmap.org/?mlat=48.8584&mlon=2.2945#map=16/48.8584/2.2945" target="_blank" rel="noopener noreferrer">Abrir mapa</a>
-    </div>
-  </div>
-</section>
+  <footer class="border-top py-4"><div class="container text-center text-body-secondary"><small>Climatema · Cidades e clima</small></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    const cidades = {
+      americana: {
+        nome: "Americana",
+        descricao: "Americana combina áreas urbanas movimentadas com parques e espaços de convivência. A Avenida Brasil e a região central estão entre os pontos conhecidos da cidade.",
+        locais: ["Praça Comendador Müller", "Parque Ecológico Municipal", "Jardim Botânico de Americana", "Avenida Brasil"],
+        imagem: "img/americana-vista-aerea.jpg",
+        alt: "Vista aérea de Americana",
+        credito: 'Foto de <a href="https://commons.wikimedia.org/wiki/User:Sintegrity" target="_blank" rel="noopener noreferrer">Sintegrity</a>, via <a href="https://commons.wikimedia.org/wiki/File:Americana_-_Vista_a%C3%A9rea_02.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>',
+        fonte: "https://www.americana.sp.gov.br/americana-index.php?a=centro-atendimento-turista-oquefazer",
+        nomeFonte: "Turismo de Americana"
+      },
+      campinas: {
+        nome: "Campinas",
+        descricao: "Campinas é um importante centro urbano e cultural do interior paulista. Parques, bosques e espaços de lazer fazem parte das opções de passeio pela cidade.",
+        locais: ["Parque Portugal (Lagoa do Taquaral)", "Bosque dos Jequitibás", "Praça Arautos da Paz", "Centro de Convivência Cultural"],
+        imagem: "img/campinas-nova.jpg",
+        alt: "Vista do centro de Campinas",
+        credito: 'Foto de <a href="https://commons.wikimedia.org/wiki/User:HVL" target="_blank" rel="noopener noreferrer">HVL</a>, via <a href="https://commons.wikimedia.org/wiki/File:Vista_do_Centro_de_Campinas_SP.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>',
+        fonte: "https://www.campinas.sp.gov.br/secretaria/servicos-publicos/pagina/parques-e-jardins-dpj-",
+        nomeFonte: "Parques e jardins de Campinas"
+      },
+      "nova-odessa": {
+        nome: "Nova Odessa",
+        descricao: "Nova Odessa valoriza o contato com a natureza e conta com espaços voltados à preservação ambiental, à pesquisa e ao passeio ao ar livre.",
+        locais: ["Jardim Botânico Plantarum", "Parque Ecológico Isidoro Bordon", "Instituto de Zootecnia", "Praça Central José Gazzetta"],
+        imagem: "img/nova-odessa-nova.jpg",
+        alt: "Vista urbana de Nova Odessa",
+        credito: 'Foto de <a href="https://commons.wikimedia.org/wiki/User:Max_Wittmann" target="_blank" rel="noopener noreferrer">Max Wittmann</a>, via <a href="https://commons.wikimedia.org/wiki/File:Nova_Odessa_-_Sao_Paulo_Brasil%3B_Outlook.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>',
+        fonte: "https://novaodessa.sp.gov.br/prefeitura/conheca-nova-odessa",
+        nomeFonte: "Conheça Nova Odessa"
+      },
+      "santa-barbara": {
+        nome: "Santa Bárbara d'Oeste",
+        descricao: "Santa Bárbara d'Oeste reúne espaços de lazer, patrimônio histórico e atividades culturais. Os parques municipais são opções para passeios em família e ao ar livre.",
+        locais: ["Parque dos Ipês", "Museu da Imigração", "Parque dos Jacarandás", "Centro de Memórias"],
+        imagem: "img/santa-barbara-nova.jpg",
+        alt: "Estação ferroviária de Santa Bárbara d'Oeste",
+        credito: 'Foto de <a href="https://commons.wikimedia.org/wiki/User:Sintegrity" target="_blank" rel="noopener noreferrer">Sintegrity</a>, via <a href="https://commons.wikimedia.org/wiki/File:Santa_B%C3%A1rbara_d_Oeste_-_Esta%C3%A7%C3%A3o_Ferrovi%C3%A1ria_de_Santa_B%C3%A1rbara_d%27Oeste_13.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>',
+        fonte: "https://www.santabarbara.sp.gov.br/cultura-e-turismo/",
+        nomeFonte: "Cultura e turismo de Santa Bárbara"
+      },
+      hortolandia: {
+        nome: "Hortolândia",
+        descricao: "Hortolândia tem parques e áreas socioambientais que oferecem espaços para caminhada, descanso e atividades junto à natureza.",
+        locais: ["Parque Socioambiental Irmã Dorothy Stang", "Parque Socioambiental Lago da Fé", "Observatório Ambiental Parque Escola (OAPE)", "Parque Chico Mendes"],
+        imagem: "img/hortolandia-nova.jpg",
+        alt: "Vista parcial de Hortolândia",
+        credito: 'Foto de <a href="https://commons.wikimedia.org/wiki/User:LeonardoMcunha" target="_blank" rel="noopener noreferrer">LeonardoMcunha</a>, via <a href="https://commons.wikimedia.org/wiki/File:Hortol%C3%A2ndia-SP.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>',
+        fonte: "https://www.hortolandia.sp.gov.br/parque-socioambiental-irma-dorothy-stang/",
+        nomeFonte: "Parque Irmã Dorothy Stang"
+      }
+    };
 
+    const painel = document.getElementById("detalhesCidade");
+    const botoes = document.querySelectorAll("[data-cidade]");
 
+    function mostrarCidade(chave) {
+      const cidade = cidades[chave];
+      const listaLocais = cidade.locais.map(function (local) {
+        return '<li class="list-group-item">' + local + '</li>';
+      }).join("");
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      painel.innerHTML =
+        '<article class="card shadow-sm h-100">' +
+          '<img src="' + cidade.imagem + '" class="card-img-top gallery-img" alt="' + cidade.alt + '">' +
+          '<div class="card-body">' +
+            '<h2 class="card-title">' + cidade.nome + '</h2>' +
+            '<p class="card-text">' + cidade.descricao + '</p>' +
+            '<h3 class="h5 mt-4">Praças, parques e atrações</h3>' +
+            '<ul class="list-group list-group-flush mb-3">' + listaLocais + '</ul>' +
+            '<a class="btn btn-primary" href="' + cidade.fonte + '" target="_blank" rel="noopener noreferrer">Saiba mais</a>' +
+            '<p class="small text-body-secondary mt-3 mb-0">Imagem: ' + cidade.credito + '</p>' +
+          '</div>' +
+        '</article>';
+
+      botoes.forEach(function (botao) {
+        const selecionado = botao.dataset.cidade === chave;
+        botao.classList.toggle("active", selecionado);
+        botao.setAttribute("aria-pressed", selecionado ? "true" : "false");
+      });
+    }
+
+    botoes.forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        mostrarCidade(botao.dataset.cidade);
+      });
+    });
+
+    mostrarCidade("americana");
+  </script>
 </body>
 </html>

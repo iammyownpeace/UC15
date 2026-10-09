@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Previsão do tempo para Americana, Nova Odessa, Santa Bárbara d'Oeste, Hortolândia e Campinas.">
+  <title>Climas | Climatema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Climatema</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="cidades.html">Cidades</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="climas.html">Climas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <header class="text-center mb-5">
+      <h1>Previsão do tempo</h1>
+      <p class="lead text-body-secondary">Acompanhe as condições atuais e a previsão para os próximos dias nas cinco cidades.</p>
+      <p class="small text-body-secondary mb-0">Dados atualizados ao abrir a página · Fonte: Open-Meteo</p>
+    </header>
+    <div id="estadoPrevisao" class="alert alert-info" role="status" aria-live="polite">Carregando a previsão do tempo…</div>
+    <section id="cartoesCidades" class="row g-4" aria-label="Previsão nas cinco cidades"></section>
+  </main>
+
+  <footer class="border-top py-4"><div class="container text-center text-body-secondary"><small>Climatema · Cidades e clima</small></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    const cidades = [
+      { nome: "Americana", latitude: -22.7372, longitude: -47.3331 },
+      { nome: "Nova Odessa", latitude: -22.7775, longitude: -47.2958 },
+      { nome: "Santa Bárbara d'Oeste", latitude: -22.7553, longitude: -47.4142 },
+      { nome: "Hortolândia", latitude: -22.8529, longitude: -47.2143 },
+      { nome: "Campinas", latitude: -22.9056, longitude: -47.0608 }
+    ];
+
+    const descricoesClima = {
+      0: "Céu limpo", 1: "Predominantemente limpo", 2: "Parcialmente nublado", 3: "Nublado",
+      45: "Nevoeiro", 48: "Nevoeiro com geada",
+      51: "Garoa leve", 53: "Garoa moderada", 55: "Garoa intensa", 56: "Garoa congelante leve", 57: "Garoa congelante intensa",
+      61: "Chuva leve", 63: "Chuva moderada", 65: "Chuva intensa", 66: "Chuva congelante leve", 67: "Chuva congelante intensa",
+      71: "Neve leve", 73: "Neve moderada", 75: "Neve intensa", 77: "Grãos de neve",
+      80: "Pancadas de chuva leves", 81: "Pancadas de chuva moderadas", 82: "Pancadas de chuva fortes",
+      85: "Pancadas de neve leves", 86: "Pancadas de neve fortes",
+      95: "Trovoada", 96: "Trovoada com granizo leve", 99: "Trovoada com granizo forte"
+    };
+
+    const elementoEstado = document.getElementById("estadoPrevisao");
+    const elementoCartoes = document.getElementById("cartoesCidades");
+
+    function temperatura(valor) {
+      return Math.round(valor).toLocaleString("pt-BR") + " °C";
+    }
+
+    function nomeDoTempo(codigo) {
+      return descricoesClima[codigo] || "Condição não disponível";
+    }
+
+    function dataFormatada(data) {
+      return new Intl.DateTimeFormat("pt-BR", { weekday: "short", day: "2-digit", month: "2-digit" })
+        .format(new Date(data + "T12:00:00"));
+    }
+
+    function criarCartao(cidade, dados) {
+      const previsoes = dados.daily.time.map((dia, indice) => `
+        <li class="list-group-item d-flex justify-content-between align-items-center gap-2">
+          <span><span class="text-capitalize">${dataFormatada(dia)}</span><br><small class="text-body-secondary">${nomeDoTempo(dados.daily.weather_code[indice])}<br>Chuva: ${dados.daily.precipitation_probability_max[indice] ?? "—"}%</small></span>
+          <span class="text-nowrap">${temperatura(dados.daily.temperature_2m_min[indice])} / ${temperatura(dados.daily.temperature_2m_max[indice])}</span>
+        </li>
+      `).join("");
+
+      return `
+        <div class="col-12 col-lg-6 col-xl">
+          <article class="card weather-card h-100">
+            <div class="card-header bg-primary text-white"><h2 class="h5 mb-0">${cidade.nome}</h2></div>
+            <div class="card-body">
+              <p class="text-body-secondary mb-1">Agora</p>
+              <p class="display-6 mb-1">${temperatura(dados.current.temperature_2m)}</p>
+              <p class="mb-1">${nomeDoTempo(dados.current.weather_code)}</p>
+              <p class="small text-body-secondary mb-0">Umidade ${Math.round(dados.current.relative_humidity_2m)}% · Vento ${Math.round(dados.current.wind_speed_10m)} km/h</p>
+            </div>
+            <h3 class="h6 px-3 pt-2 mb-0">Próximos 5 dias</h3>
+            <ul class="list-group list-group-flush mt-2">${previsoes}</ul>
+          </article>
+        </div>
+      `;
+    }
+
+    async function carregarPrevisoes() {
+      const resultados = await Promise.allSettled(cidades.map(async (cidade) => {
+        const parametros = new URLSearchParams({
+          latitude: cidade.latitude,
+          longitude: cidade.longitude,
+          current: "temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code",
+          daily: "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max",
+          forecast_days: "5",
+          timezone: "auto"
+        });
+        const resposta = await fetch("https://api.open-meteo.com/v1/forecast?" + parametros);
+        if (!resposta.ok) throw new Error("Não foi possível carregar a previsão.");
+        return { cidade, dados: await resposta.json() };
+      }));
+
+      const cartoes = resultados
+        .filter((resultado) => resultado.status === "fulfilled")
+        .map((resultado) => criarCartao(resultado.value.cidade, resultado.value.dados));
+      elementoCartoes.innerHTML = cartoes.join("");
+
+      const falhas = resultados.filter((resultado) => resultado.status === "rejected").length;
+      if (falhas === cidades.length) {
+        elementoEstado.className = "alert alert-warning";
+        elementoEstado.textContent = "Não foi possível carregar a previsão. Verifique sua conexão e tente novamente.";
+      } else if (falhas > 0) {
+        elementoEstado.className = "alert alert-warning";
+        elementoEstado.textContent = "Algumas previsões não puderam ser carregadas. Os demais dados estão disponíveis.";
+      } else {
+        elementoEstado.className = "alert alert-success";
+        elementoEstado.textContent = "Previsão carregada. As temperaturas e condições são atualizadas automaticamente pelo serviço meteorológico.";
+      }
+    }
+
+    carregarPrevisoes();
+  </script>
+</body>
+</html>
+
+
